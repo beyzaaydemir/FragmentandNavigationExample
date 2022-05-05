@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstPage">
+
+    <fragment
+        android:id="@+id/firstPage"
+        android:name="com.beyzanuraydemir.fragmentandnavigationexample.FirstPage"
+        android:label="fragment_first_page"
+        tools:layout="@layout/fragment_first_page" >
+        <action
+            android:id="@+id/action_firstPage_to_secondPage"
+            app:destination="@id/secondPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondPage"
+        android:name="com.beyzanuraydemir.fragmentandnavigationexample.SecondPage"
+        android:label="fragment_second_page"
+        tools:layout="@layout/fragment_second_page" >
+        <action
+            android:id="@+id/action_secondPage_to_thirdPage2"
+            app:destination="@id/thirdPage2" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdPage2"
+        android:name="com.beyzanuraydemir.fragmentandnavigationexample.ThirdPage"
+        android:label="fragment_third_page"
+        tools:layout="@layout/fragment_third_page" >
+        <action
+            android:id="@+id/action_thirdPage2_to_fourthPage"
+            app:destination="@id/fourthPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthPage"
+        android:name="com.beyzanuraydemir.fragmentandnavigationexample.FourthPage"
+        android:label="fragment_fourth_page"
+        tools:layout="@layout/fragment_fourth_page" >
+        <action
+            android:id="@+id/action_fourthPage_to_fifthPage"
+            app:destination="@id/fifthPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifthPage"
+        android:name="com.beyzanuraydemir.fragmentandnavigationexample.FifthPage"
+        android:label="fragment_fifth_page"
+        tools:layout="@layout/fragment_fifth_page" >
+        <action
+            android:id="@+id/action_fifthPage_to_sixthPage"
+            app:destination="@id/sixthPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixthPage"
+        android:name="com.beyzanuraydemir.fragmentandnavigationexample.SixthPage"
+        android:label="fragment_sixth_page"
+        tools:layout="@layout/fragment_sixth_page" >
+        <action
+            android:id="@+id/action_sixthPage_to_seventhPage"
+            app:destination="@id/seventhPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/seventhPage"
+        android:name="com.beyzanuraydemir.fragmentandnavigationexample.SeventhPage"
+        android:label="fragment_seventh_page"
+        tools:layout="@layout/fragment_seventh_page" >
+        <action
+            android:id="@+id/action_seventhPage_to_eigthPage"
+            app:destination="@id/eigthPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/eigthPage"
+        android:name="com.beyzanuraydemir.fragmentandnavigationexample.EigthPage"
+        android:label="fragment_eigth_page"
+        tools:layout="@layout/fragment_eigth_page" >
+        <action
+            android:id="@+id/action_eigthPage_to_firstPage"
+            app:destination="@id/firstPage" />
+    </fragment>
+</navigation>
